@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mood Calculator"
+        android:textColor="@color/purple_light"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:padding="8dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="8dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/angry"
+            android:background="@color/white"
+            android:id="@+id/angry"
+            android:layout_margin="8dp"
+            android:layout_weight="1"/>
+
+
+        <ImageButton
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sad"
+            android:background="@color/white"
+            android:id="@+id/sad"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="8dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stress"
+            android:background="@color/white"
+            android:id="@+id/stress"
+            android:layout_margin="8dp"
+            android:layout_weight="1"/>
+
+
+        <ImageButton
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/happy"
+            android:background="@color/white"
+            android:id="@+id/happy"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is the suggestion from us"
+        android:id="@+id/mood_sugg"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:layout_margin="8dp"/>
+
+
+</LinearLayout>
